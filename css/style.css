@@ -1,0 +1,122 @@
+
+body {
+  background-color: #0072ce;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  padding-right: 5%;
+}
+
+.header_navigation {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header_navigation a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header_navigation a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header_navigation a:hover {
+  color: rgb(220, 220, 220);
+}
+
+.header_logo {
+  display: flex;
+  padding: 1%;
+}
+
+main {
+  display:flex;
+  column-gap: 10%;
+  padding: 2% 8% 0% 10%;
+}
+
+.main_contents {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  row-gap: 5%;
+  justify-content: center;
+}
+
+.copy_sentence h1 {
+  color: white;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.copy_sentence p {
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 3.5px;
+}
+
+.download_logo {
+  display: flex;
+  column-gap: 20px;
+}
+
+.explanation {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 1219px) {
+	.copy_sentence h1 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  .copy_sentence p {
+    color: white;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 789px) {
+	main {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    column-gap: 10%;
+    padding: 2% 8%;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .copy_sentence p {
+    font-size: 13px;
+  }
+}
